@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .abc{
+            background-color:red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // alert($('table tr td:even').css('background-color','yellow'));
+            // $('table tr').each(function(){
+
+            //     if($(this).find('td:first').text() == 'C#');
+            //     alert($(this).html()); 
+            // });
+            alert($('ul li:last').addClass('abc'));
+        });
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li>selector 1</li>
+        <li>selector 2</li>
+        <li>selector 3</li>
+        <li>selector 4</li>
+    </ul>
+    <table class="table1" border="1">
+        <tr>
+        <th>1</th>
+        <td>C#</td>
+        <td>PYTHON</td>
+        <td>C</td>
+        </tr>
+        <tr>
+        <th>2</th>
+        <td>JAVA</td>
+        <td>PHP</td>
+        <td>LARAVEL</td>
+        </tr>
+    </table>
+    <table class="table2" border="1">
+            <tr>
+            <th>3</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            </tr>
+            <tr>
+            <th>4</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            </tr>
+        </table>
+    <div>
+        <a href="http://facebook.com">Facebook</a>
+    </div><br>
+        <a href="http://youtube.com">Youtube</a>
+</body>
+</html>

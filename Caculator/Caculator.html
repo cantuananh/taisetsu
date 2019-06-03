@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Caculator.css">
+</head>
+<body>
+    <!-- <div class="tong">
+        <div class="container">
+            <form>
+                <div>    
+                    <input class="result" type="text" id="result">
+                    <input class="result" type="text" id="input" placeholder="0">
+                </div>
+                    <table>
+                        <tr>
+                            <td><input type="button" class="btn-first" type="button" value="AC" onclick="clearScreen()"></td>
+                            <td><input type="button" class="btn-first" type="button" value="CE" onclick="backSpace()"></td>
+                            <td><input type="button" class="btn-first" type="button" value="%" onclick="getPercent('%')"></td>
+                            <td onclick="getNumber('/')"><input type="button" class="btn-caculator" type="button" value=""><i class="fas fa-divide"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btn" type="button" value="7" onclick="getNumber(7)"></td>
+                            <td><input type="button" class="btn" type="button" value="8" onclick="getNumber(8)"></td>
+                            <td><input type="button" class="btn" type="button" value="9" onclick="getNumber(9)"></td>
+                            <td onclick="getNumber('*')"><input type="button" class="btn-caculator" type="button" value=""><i class="fas fa-times"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btn" type="button" value="4" onclick="getNumber(4)"></td>
+                            <td><input type="button" class="btn" type="button" value="5" onclick="getNumber(5)"></td>
+                            <td><input type="button" class="btn" type="button" value="6" onclick="getNumber(6)"></td>
+                            <td onclick="getNumber('-')"><input type="button" class="btn-caculator" type="button" value=""><i class="fas fa-minus"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btn" type="button" value="1" onclick="getNumber(1)"></td>
+                            <td><input type="button" class="btn" type="button" value="2" onclick="getNumber(2)"></td>
+                            <td><input type="button" class="btn" type="button" value="3" onclick="getNumber(3)"></td>
+                            <td onclick="getNumber('+')"><input type="button" class="btn-caculator" type="button" value=""><i class="fas fa-plus"></i></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" class="btn" type="button" value="0" onclick="getNumber(0)"></td>
+                            <td><input type="button" class="btn" type="button" value="." onclick="getNumber('.')">.</td>
+                            <td onclick="caculate('=')"><input type="button" class="btn-caculator" type="button" value="" ><i class="fas fa-equals"></i></td>
+                        </tr>
+                    </table>
+            </form>
+        </div>
+    </div>
+<script src="Caculator.js"></script> -->
+<div class="tong">
+    <div class="container">
+        <form>
+            <div>    
+                <input class="result" type="text" id="result" placeholder="0">
+                <input class="result" type="text" id="input" >
+            </div>
+                <table>
+                    <tr>
+                        <td><input type="button" class="btn-AC" type="button" value="AC" id="AC"></td>
+                        <td><input type="button" class="btn-CE" type="button" value="CE" id="CE"></td>
+                        <td><input type="button" class="btn-percent" type="button" value="%"></td>
+                        <td class="operation" data-operation="/"><input type="button" class="btn-caculator btn-divide" type="button" value="/"><i class="fas fa-divide"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" type="button" value="7"></td>
+                        <td><input type="button" class="btn" type="button" value="8"></td>
+                        <td><input type="button" class="btn" type="button" value="9"></td>
+                        <td class="operation" data-operation="*"><input type="button" class="btn-caculator btn-multiply" type="button" value="*"><i class="fas fa-times"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" type="button" value="4"></td>
+                        <td><input type="button" class="btn" type="button" value="5"></td>
+                        <td><input type="button" class="btn" type="button" value="6"></td>
+                        <td class="operation" data-operation="-"><input type="button" class="btn-caculator" type="button" value="-"><i class="fas fa-minus"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="btn" type="button" value="1"></td>
+                        <td><input type="button" class="btn" type="button" value="2"></td>
+                        <td><input type="button" class="btn" type="button" value="3"></td>
+                        <td class="operation" data-operation="+"><input type="button" class="btn-caculator" type="button" value="+"><i class="fas fa-plus"></i></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" class="btn" type="button" value="0"></td>
+                        <td><input type="button" class="btn-dot" type="button" value="." id="dot">.</td>
+                        <td class="equal"><input type="button" class="btn-equal" type="button" value="=" ><i class="fas fa-equals"></i></td>
+                    </tr>
+                </table>
+        </form>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Caculator.js"></script>
+</body>
+</html>

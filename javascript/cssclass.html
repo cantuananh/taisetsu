@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <style>
+        .color{
+            color:red;
+        }
+        .italic{
+            font-style: italic;
+        }
+    </style>
+    <script>
+        $(Document).ready(function () {
+            $('#btnAddClass').on('click',function(){
+                $('h1').addClass('color');
+            });
+            $('#btnRemoveClass').on('click',function(){
+                $('h1').removeClass('color');
+            });
+            $('#btnToogleClass').on('click',function(){
+                $('h1').toggleClass('color');
+            });
+            $('#btnAddItalic').on('click',function(){
+                $('h1').addClass('italic');
+            });
+            $('#btnRemoveItalic').on('click',function(){
+                $('h1').removeClass('italic');
+            });
+            $('#btnHasColor').on('click',function(){
+                
+                alert($('h1').hasClass('color'));
+            });
+          });
+    </script>
+</head>
+<body>
+    <h1>this is class manimulate</h1>
+    <br>
+    <button id="btnAddClass">add color</button>
+    <button id="btnRemoveClass">Remove color</button>
+    <button id="btnToogleClass">toogle color</button>
+
+    <button id="btnAddItalic">add italic</button>
+
+    <button id="btnRemoveItalic">remove italic</button>
+    <button id="btnHasColor">has color</button>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            var employeeJson = [{
+                "firstName":"TUANANH",
+                "lastName":"CAN",
+                "email":"tuananhthemen391997@gmail.com",
+                "age":"21",
+            },
+            {
+                "firstName":"MANHHA",
+                "lastName":"DANGNGUYEN",
+                "email":"manhhavcl@gmail.com",
+                "age":"100",
+            }
+            ];
+            // var result = '';
+            // $.each($(employeeJson), function(i, item) {
+            //     result += "firstName:" + this.firstName + " lastname:" + this.lastName
+            // + " email" + this.email + " age:" + this.age;
+            //   });
+            // $('#result').html(result);
+
+            //chuyen sang mot chuoi
+            $('#result').html(JSON.stringify(employeeJson));
+            var content = $('#result').html();
+            var objectJson = JSON.parse(content);
+            console.log(objectJson);
+            
+        })
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() { 
+            // $('#first .small').css('border','1px solid red')
+            $('.big').filter('.small').css('border','1px solid red');
+         })
+    </script>
+</head>
+<body>
+    <div id="first" class="big">
+        <span class="small">this is class selector 1</span>
+    </div>
+    <div class="big small">
+            <span class="small">this is class selector 1</span>
+        </div>
+    <div class="small">
+            <span>this is class selector 2</span>
+    </div>
+    <div class="small">
+        <div class="xsmall"></div>
+    </div>
+</body>
+</html>

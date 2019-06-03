@@ -1,0 +1,129 @@
+body{
+    border: none;
+}
+.tong{
+    max-width: 100%;
+
+}
+form{
+    background-color: black;
+    padding: 20px;
+    border-radius: 40px;
+}
+.container{
+    max-width: 640px;
+    margin: 0  auto;
+}
+table{
+    width: 100%;
+}
+table td i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+table tr {
+    display: flex;
+    justify-content: space-around;
+}
+table tr td{
+    width: 100%;
+    margin: 5px;
+    position: relative;
+}
+table tr:last-child td:first-child{
+    flex-basis: 200%;
+}
+table {
+    width: 100%;
+    background-color: grey;
+    border: none;
+}
+.result {
+    width: 100%;
+    border: none;
+    text-align: right;
+    background-color: chartreuse;
+    font-size: 50px;
+    height: 50px;
+}
+.btn-caculator{
+    color:orange;
+    background-color: orange;
+    width: 100%;
+    height: 80px;
+    border: none;
+    border-radius: 20%;
+    font-size: 30px;
+    transform: translate(-50% -50%);
+    
+}
+.btn{
+    width: 100%;
+    height: 80px;
+    border: none;
+    color:black;
+    border-radius: 20%;
+    font-size: 30px;
+}
+.btn-AC{
+    color: while;
+    background-color: darkgrey;
+    width: 100%;
+    height: 80px;
+    border-radius: 20%;
+    border: none;
+    font-size: 30px;
+}
+#result{
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    border: none;
+}
+.btn-CE{
+    color: while;
+    background-color: darkgrey;
+    width: 100%;
+    height: 80px;
+    border-radius: 20%;
+    border: none;
+    font-size: 30px;
+}
+.btn-percent{
+    color: while;
+    background-color: darkgrey;
+    width: 100%;
+    height: 80px;
+    border-radius: 20%;
+    border: none;
+    font-size: 30px;
+}
+ tr .btn-equal{
+    color: orange;
+    background-color:orange;
+    width: 100%;
+    height: 80px;
+    border-radius: 20%;
+    border: none;
+    font-size: 30px;
+}
+tr .btn-dot{
+    color: while;
+    width: 100%;
+    height: 80px;
+    border-radius: 20%;
+    border: none;
+    font-size: 30px;
+}
+.btn-percent{
+    color: black;
+    background-color: darkgrey;
+    width: 100%;
+    height: 80px;
+    border-radius: 20%;
+    border: none;
+    font-size: 30px;
+}

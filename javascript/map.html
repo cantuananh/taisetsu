@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //phuong thuc each()
+            // var result = [];
+            // $('li').each(function(index, element){
+            //     result.push($(element).text());
+            // });
+            // alert(result);
+            //phuong thuc map()
+            alert($('li').map(function(index, element){
+                return $(element).text();
+            }).get());
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>PHP</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>PHP</li>
+        <li>LARAVEL</li>
+        <li>PYTHON</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#lbn1').text('click here');
+                $('#link1').attr('href','http://google.com');
+            });
+            $('#btn2').click(function(){
+                alert($('#lbn1').text('get click here'));
+            });
+            $('#btn3').click(function(){
+                $('#lbn1').attr('style','color:red');
+                $('#txt1').val('123');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <label id="lbn1"></label>
+    <button id="btn1">Click here</button>
+    <input type="text" id="txt1"/>
+    <br>
+    <button id="btn2">get Click here</button>
+    <button id="btn3">change color</button>
+    <a href="#" id="link1">link1</a>
+
+</body>
+</html>

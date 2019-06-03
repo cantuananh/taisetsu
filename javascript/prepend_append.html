@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('div').prepend('<b>Progamming </b>');
+            $('div').append('<b>Tutorial</b>');
+            $('div').append( $('#spanExit'));
+            // $('<b>Progamming </b>').prependTo('div');
+        });
+
+    </script>
+</head>
+<body>
+    <span id="spanExit">tuan anh dep trai</span>
+    <div>Jquery</div>
+    <div>C#</div>
+    <div>PHP</div>
+</body>
+</html>

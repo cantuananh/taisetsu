@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btnSubmit').on('click', function(){
+                var Checked = $('input[type="checkbox"]:checked');
+                if(Checked.length > 0)
+                {
+                    $('#divResult').text(Checked.length + "checkbox selected");
+                    Checked.each(function(){
+                    $('#divResult').append($(this).val() + "<br>");
+                });
+                }
+                else{
+                    $('#divResult').text('No checkbox selected');
+                }
+                
+            });
+        });
+    </script>
+</head>
+<body>
+        <label>
+            <input type="checkbox" value="C#"/>C#
+            </label>
+            <label>
+                <input type="checkbox" value="PHP"/>PHP
+            </label>
+            <label>
+                <input type="checkbox" value="LARAVEL"/>LARAVEL
+             </label>
+            <label>
+                <input type="checkbox" value="JAVA"/>JAVA
+             </label>
+            <input type="submit" id="btnSubmit" value="submit"/>
+            <div id="divResult"></div>
+</body>
+</html>
